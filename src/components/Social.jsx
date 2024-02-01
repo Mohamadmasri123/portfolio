@@ -11,7 +11,7 @@ const Social = () => {
     child:(   <>
       LinkedIn  <FaLinkedin size={100} className='pl-8' />
         </> ),
-        href:"https://www.linkedin.com/",
+        href:"https://www.linkedin.com/in/mohamad-bassam-masri-0790b2294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         style:'rounded-tr-md',
 
     },

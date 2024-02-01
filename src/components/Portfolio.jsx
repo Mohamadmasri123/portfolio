@@ -17,38 +17,44 @@ const Portfolio = () => {
       id:1,
       src:travel,
       path:" https://travels-delta.vercel.app/",
-      code:"https://github.com/Mohamadmasri123/travels"
+      code:"https://github.com/Mohamadmasri123/travels",
+      status:"Done"
     },
     {
       id:2,
       src:prjRestau,
-      path: " https://travels-delta.vercel.app/",
-      code:"https://github.com/Mohamadmasri123/Restaurant"
+      path: "https://restaurant-seven-dusky.vercel.app/",
+      code:"https://github.com/Mohamadmasri123/Restaurant",
+      status:"Done"
     },
     {
       id:3,
       src:ecommercefruit,
       path: " https://ecommerce-fruits-iota.vercel.app/",
-      code:"https://github.com/Mohamadmasri123/ecommerce-fruits"
+      code:"https://github.com/Mohamadmasri123/ecommerce-fruits",
+      status:"Done"
  
     },
     {
       id:4,
       src:prjblogs,
       path:" https://blog-nine-omega-15.vercel.app/ ",
-      code:"https://github.com/Mohamadmasri123/blog"
+      code:"https://github.com/Mohamadmasri123/blog",
+      status:"In PROGRESS"
     },
     {
       id:5,
       src:instaclone,
       path:" https://insta-clone-beta-three.vercel.app/",
-      code:"https://github.com/Mohamadmasri123/insta-clone"
+      code:"https://github.com/Mohamadmasri123/insta-clone",
+      status:"In PROGRESS"
     },
     {
       id:6,
       src:shop,
       path:"https://store-one-snowy.vercel.app/",
-      code: "https://github.com/Mohamadmasri123/store"
+      code: "https://github.com/Mohamadmasri123/store",
+      status:"In PROGRESS"
     },
 
   ]
@@ -64,9 +70,10 @@ const Portfolio = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0' > 
             {
-            portfolios.map(({id,src,path,code})=>(
+            portfolios.map(({id,src,path,code,status})=>(
               <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                 <img src={src} alt=""  className='rounded-md duration=200 hover:scale-105'/>
+                <p className=' flex justify-center items-center mt-2'>status : {status}</p>  
                 <div className='flex items-center justify-center'>
                   <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'> <a href={path}>Demo</a> </button>
                   <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={code}>Code</a></button>
