@@ -1,11 +1,10 @@
 import React from 'react'
-import prjPlat from "./../assets/prj-plat.png"
-import prjProfile from "./../assets/prj-profile.png"
-import prjRealestate from "./../assets/prj-RealEstate.jpeg"
+import travel from "./../assets/prj-travel.png"
 import prjRestau from "./../assets/prj-Restau.png"
-import prjShop from "./../assets/prj-shop.png"
-import prjSustainble from "./../assets/prj-sustainble.png"
-
+import ecommercefruit from "./../assets/prj-fruit.png"
+import prjblogs from "./../assets/prjblog.png"
+import instaclone from"./../assets/insta-home.png"
+import shop from "./../assets/prjshop.png"
 
 
 
@@ -16,29 +15,42 @@ const Portfolio = () => {
   const portfolios =[
     {
       id:1,
-      src:prjPlat
+      src:travel,
+      path:" https://travels-delta.vercel.app/",
+      code:"https://github.com/Mohamadmasri123/travels"
     },
     {
       id:2,
-      src:prjProfile
+      src:prjRestau,
+      path: " https://travels-delta.vercel.app/",
+      code:"https://github.com/Mohamadmasri123/Restaurant"
     },
     {
       id:3,
-      src:prjRealestate,
+      src:ecommercefruit,
+      path: " https://ecommerce-fruits-iota.vercel.app/",
+      code:"https://github.com/Mohamadmasri123/ecommerce-fruits"
  
     },
     {
       id:4,
-      src:prjRestau
+      src:prjblogs,
+      path:" https://blog-nine-omega-15.vercel.app/ ",
+      code:"https://github.com/Mohamadmasri123/blog"
     },
     {
       id:5,
-      src:prjShop
+      src:instaclone,
+      path:" https://insta-clone-beta-three.vercel.app/",
+      code:"https://github.com/Mohamadmasri123/insta-clone"
     },
     {
       id:6,
-      src:prjSustainble
+      src:shop,
+      path:"https://store-one-snowy.vercel.app/",
+      code: "https://github.com/Mohamadmasri123/store"
     },
+
   ]
   
   return (
@@ -52,12 +64,12 @@ const Portfolio = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0' > 
             {
-            portfolios.map(({id,src})=>(
+            portfolios.map(({id,src,path,code})=>(
               <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                 <img src={src} alt=""  className='rounded-md duration=200 hover:scale-105'/>
                 <div className='flex items-center justify-center'>
-                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'> <a href={path}>Demo</a> </button>
+                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={code}>Code</a></button>
                 </div>
               </div>
               
