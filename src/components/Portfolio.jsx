@@ -38,7 +38,7 @@ const Portfolio = () => {
     {
       id:4,
       src:prjblogs,
-      path:" https://blog-nine-omega-15.vercel.app/ ",
+      path:" https://blog-rust-nu-16.vercel.app/",
       code:"https://github.com/Mohamadmasri123/blog",
       status:"In PROGRESS"
     },
