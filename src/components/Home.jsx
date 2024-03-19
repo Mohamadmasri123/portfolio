@@ -24,8 +24,8 @@ const Home = () => {
           </div>
          
         </div> 
-        <div className='flex flex-col justify-center '>
-            <img src={mee} alt="myProfile" className='rounded-2xl mx-auto w-2/5 h-2/4  md:w-full' />
+        <div className='flex   justify-center '>
+            <img src={mee} alt="myProfile" className='rounded-2xl mx-auto lg:w-[700px] lg:h-[500px]  h-[300px] w-[300px] md:w-full' />
           </div>
       </div>
    
