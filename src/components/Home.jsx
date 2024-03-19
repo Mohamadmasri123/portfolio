@@ -4,12 +4,12 @@ import {MdOutlineKeyboardArrowRight} from  "react-icons/md"
 
 const Home = () => {
   return (
-    <div id="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 ">
-      <div className='text-white max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4   md:flex-row '>
+    <div id="home" className="h-screen  w-[450px] lg:w-screen bg-gradient-to-b  from-black to-gray-800 ">
+      <div className='text-white max-w-screen-lg pt-20 mx-auto flex flex-col items-center justify-center h-full px-4   md:flex-row '>
         <div className='flex flex-col justify-center h-full'>
           <h2 className='text-4xl sm:text-7xl font-bold text-white'>
             I'm a full stack Developer
-          </h2>
+          </h2> 
           <p className='text-gray-500 py-4 max-w-md'>
             I have 1 years of experience building website.
             Currently,I live to work on web application usin technologies like 
