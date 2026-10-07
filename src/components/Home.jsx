@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { FiCpu, FiLayers } from "react-icons/fi";
+import {  FiLayers } from "react-icons/fi";
 import avatarCoder from "./../assets/ai-avatar-programmer.png";
 
 const Home = () => {
