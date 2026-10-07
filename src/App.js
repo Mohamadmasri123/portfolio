@@ -1,23 +1,40 @@
-import Home from "./components/Home";
-import Nav from "./components/Nav";
-import Social from "./components/Social";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import Pages from "./components/Pages";
+import Portfolio from "./components/Portfolio";
+import DisplayProject from "./components/Displayproject";
+import DisplayProjectTwo from "./components/Displayprojecttwo";
+import InProgress from "./components/Inprogress";
+
+const App = () => {
   return (
-      <div>
-        <Nav/>
-        <Home/>
-        <Social/>
-        <About/>
-        <Portfolio/>
-        <Experience/>
-        <Contact/>
-      </div>
+    <Routes>
+      {/* Main Website */}
+      <Route path="/" element={<Pages />} />
+
+      {/* Portfolio Page */}
+      <Route path="/portfolio" element={<Portfolio />} />
+
+      {/* Project Details */}
+      <Route
+        path="/displayproject"
+        element={<DisplayProject />}
+      />
+
+      <Route
+        path="/displayprojecttwo"
+        element={<DisplayProjectTwo />}
+      />
+
+
+
+      <Route
+        path="/inprogress"
+        element={<InProgress />}
+      />
+    </Routes>
   );
-}
+};
 
 export default App;
